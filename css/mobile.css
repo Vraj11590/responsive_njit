@@ -1,0 +1,157 @@
+/*structure*/
+
+
+.container{
+    min-height:40px;
+    width:360px;
+    background-color: #a71e22;
+	margin:auto;
+	position: relative;
+}
+.menu{
+    width:50px;
+}
+.select{
+    width: 473px;
+    border:1px solid black;
+	float: right;
+	font-size: 0.9em;
+	display:inline;
+}
+.submenu{
+    width:360px;
+    height:80px;
+    background-color:#030334;
+	margin:auto;
+
+}
+.feature{
+    width:360px;
+    min-height:200px;
+    margin:auto;
+    clear: both;
+	
+
+}
+.content{
+    width:360px;
+    min-height:400px;
+    background-color: #030334;
+	margin:auto;
+
+}
+.footer{
+    width:360px;
+    min-height:50px;
+    background-color:#30354b;
+	margin:auto;
+
+}
+.cent{
+	margin:auto;
+	background-color: #030334;
+	width:100%;
+
+}
+.slide { border:8px solid #fff; width:944px; height:360px; background-color:#fff; color:#5c5953; position:absolute; top:14px; left:0; }
+#homepage{
+	font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+	color: #fff;
+	font-size: 0.875em;
+	line-height: 1.4;
+	min-height: 101%;
+}
+#page{margin:auto;}
+#header{display:block;}
+    #h_menu{float:left;}
+    #h_type{float:right;}
+	#header h1{margin: 10px 0 0 -10px;float: left;}
+#metanav { float:right; font-size:0.9em;}
+		#metanav ul { margin:0; list-style-type:none; }
+			#metanav li { float:left; margin:0 10px; }
+				#metanav li a { display:block; padding:5px 3px 3px 3px; color:#eee; text-decoration:none; font-weight: normal;}
+				#metanav li a:hover { color:#fcf894; }
+#audiences { float:right; clear:right; margin-top:70px; position:relative; padding-right:160px; color:#d5dae1; white-space:nowrap; }
+		#audiences ul { position:absolute; top:0; right:0; list-style-type:none; margin:0; padding:0 8px; width:140px; height:20px; overflow:hidden; z-index:300; outline:none; }
+				#audiences ul li { margin:0 0 2px; }
+					#audiences ul li a { color:#b9dcea; font-weight:bold; text-decoration:none; white-space:nowrap; }
+					#audiences ul li a:hover { text-decoration:underline; }
+		#audiences #audiences_arrow { width:20px; height:20px; background:#383e51 url(../images/audience_arrow.gif) center 1px no-repeat; display:block; position:absolute; top:0; right:0; z-index:350; -webkit-border-radius:0 5px 5px 0; -moz-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0; }
+		#audiences #audiences_arrow:hover { background-position:center -19px; background-color:#363c4f; }
+		#audiences ul.hover,#audiences ul.active { background-color:#484e61; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; }
+#navbar { clear:both; border-top:1px solid #c00; line-height:44px; font-weight:300; font-family:"museo-slab-1","museo-slab-2",sans-serif; font-size:1.1em; position:relative; }
+		#navbar ul { margin:0; list-style-type:none; margin:0 -13px; position:relative; z-index:100; }
+			#navbar ul li { float:left; text-align:center; }
+				#navbar ul li a { font-weight: normal; color:#fff; display:block; text-decoration:none; }
+				#navbar ul li a:hover { color:#fcf894; }
+				#navbar ul li a.current { color:#fcf894; }
+			#nav_pointer { display:none; background-color:#7c0607; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; height:1.3em; position:absolute; height:30px; top:7px; }
+				#nav_pointer_arrow { position:absolute; width:24px; height:14px; left:50%; bottom:-14px; margin-left:-12px; background-image:url(../images/nav_pointer_arrow.png); }
+				.subpage #nav_pointer_arrow,.upcoming #nav_pointer_arrow { display:none; }
+			#nav-homepage { width:65px; }
+			#nav-about { width:66px; }
+			#nav-admissions { width:103px; }
+			#nav-academics { width:101px; }
+			#nav-research { width:89px; }
+			#nav-campuslife { width:110px; }
+			#nav-athletics { width:82px; }
+			#nav-continuing { width:119px; }
+			#nav-beyond { width:112px; }
+			#nav-news { width:66px; }
+			#nav-giving { width:69px; float:right; }
+#m_submenu{display:block;}
+#m_feature{display:block;}
+
+
+@media(max-width: 400px){
+	.container{width:400px;}
+	.submenu{width:400px;margin-bottom:20px;}
+	.feature{width:400px;margin-bottom: 5px;}
+	.content{width:400px;}
+	.footer{width:400px;}
+	.cent{width:400px;}
+	#navbar{display: none;}
+		#navbar_mobile{clear:both; text-shadow: none;}
+			#navbar_mobile ul{margin:0; list-style-type:none;}
+			#navbar_mobile ul li{text-align:center;background-color: #30354b; }
+			#navbar ul li a:hover { color:green; }
+	#njit_logo{display: none;}
+	#metanav{display:none;}
+	#audiences{margin: 0px; margin-right:60px; margin-top:10px;color:#30354b; text-shadow: none;}
+	#feature_img_box{border: 8px solid #a71e22;}
+	#f_img{width:350px; height:300px;}
+}
+@media(min-width:401px) and (max-width:599)
+{
+	.container{width:600px;}
+	.submenu{width:600px;height: 40px;}
+	.feature{width:600px;height: 300px;}
+	.content{width:600px;}
+	#njit_logo{display:none;}
+}
+@media (max-width:970px) and (min-width:600px) 
+{
+	.container{width:700px;}
+	#m_submenu{visibility:hidden;}
+	.feature{width:700px;height: 300px;}
+	.content{width:700px;}
+	.footer{width:700px;}
+	#f_img{width:700px; height:345px;}
+	#njit_logo{display:none;}
+
+}
+@media(min-width:970px)
+{
+	.container{width:960px;background-color:#030334;}
+	.submenu{width:600px;height: 40px;}
+	.feature{width:100%;height: 404px;background-color: #a71e22;}
+	.metanav{}
+	.content{width:980px;height:576px;}
+	.footer{width:100%;}
+	#f_img{width:924px; height:345px;}
+	#navbar{}
+	#metanav{float: right; display:inline;font-size: 0.9em;}
+	#m_icon{visibility:hidden;}
+	#m_submenu{display:none;}
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,img,form,label,iframe,fieldset { margin:0; padding:0; font-size:1em; line-height:inherit; font-weight:inherit; color:inherit; border:none; }
